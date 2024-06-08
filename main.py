@@ -1,15 +1,16 @@
 from contacts.contact_manager import *
 
 def main():
-    print('=====SISTEMA DE CONTATOS=====\n')
-    print("1. Adicionar contato")
-    print("2. Listar contato")
-    print("3. Remover contato")
-    print("4. Sair")
-
     lista_contatos = []
     opcao = 1
+
     while opcao != 4:
+        print('=====SISTEMA DE CONTATOS=====\n')
+        print("1. Adicionar contato")
+        print("2. Listar contato")
+        print("3. Remover contato")
+        print("4. Sair")
+        
         opcao = int(input('Digite uma opção: '))
 
         if opcao == 1:
