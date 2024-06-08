@@ -1,4 +1,5 @@
 from contacts_manager import *
+from listar import *
 
 def main():
     print('=====SISTEMA DE CONTATOS=====\n')
@@ -16,8 +17,9 @@ def main():
             pass
         
         elif opcao == 2:
-            pass
-
+            lista = listar_contatos(lista_contatos)
+            print(lista)
+            
         elif opcao == 3:
             pass
 
