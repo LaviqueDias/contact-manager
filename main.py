@@ -1,4 +1,4 @@
-from contacts_manager import *
+from contacts_manager import * # type: ignore
 
 def main():
     print('=====SISTEMA DE CONTATOS=====\n')
