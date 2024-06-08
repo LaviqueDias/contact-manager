@@ -11,7 +11,7 @@ def main():
         print("3. Remover contato")
         print("4. Sair")
         
-        opcao = int(input('Digite uma opção: '))
+        opcao = int(input('\nDigite uma opção: '))
 
         if opcao == 1:
             nome = input('Digite o nome do contato: ')
@@ -23,10 +23,20 @@ def main():
         
         elif opcao == 2:
             lista = listar_contatos(lista_contatos)
-            print(lista)
+
+            if lista != "":
+                print(lista)
+            else:
+                print('Não há contatos cadastrados!')
             
         elif opcao == 3:
-            pass
+            telefone = input('Digite o telefone do contato que deseja excluir: ')
+            foi_excluido = excluir_contato(telefone, lista_contatos)
+
+            if foi_excluido == True:
+                print('Contato excluido com sucesso!')
+            else:
+                print('Não há contato com esse telefone!')
 
         elif opcao != 4:
             print('Digite uma opção válida!')

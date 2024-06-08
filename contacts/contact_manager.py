@@ -26,10 +26,14 @@ def listar_contatos(lista):
     return lista_organizada
 
 def excluir_contato(telefone, lista_contatos):
-        if telefone in telefone.contatos:
-            del lista_contatos.contatos[telefone]
-            print(f"Contato {telefone} excluído com sucesso.")
-        else:
-            print(f"Contato {telefone} não encontrado.")
+    foi_excluido = False
+    for contato in lista_contatos:
+        if contato['telefone'] == telefone:
+            lista_contatos.remove(contato)
+            foi_excluido = True
+            return foi_excluido
+    return foi_excluido
+
+        
             
         
