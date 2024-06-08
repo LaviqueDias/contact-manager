@@ -1,5 +1,4 @@
 from contacts_manager import *
-from listar import *
 
 def main():
     print('=====SISTEMA DE CONTATOS=====\n')
@@ -9,6 +8,7 @@ def main():
     print("4. Sair")
 
     lista_contatos = []
+
     opcao = 1
     while opcao != 4:
         opcao = int(input('Digite uma opção: '))
