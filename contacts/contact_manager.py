@@ -12,4 +12,5 @@ def adicionar_contato(nome, sobrenome, telefone, email, lista_contatos):
             ja_adicionado = True
             return ja_adicionado
     
+    lista_contatos.append(contato)
     return ja_adicionado
