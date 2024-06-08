@@ -1,5 +1,4 @@
-from contacts_manager import *
-from listar import *
+from contacts.contact_manager import *
 
 def main():
     print('=====SISTEMA DE CONTATOS=====\n')
@@ -14,7 +13,12 @@ def main():
         opcao = int(input('Digite uma opção: '))
 
         if opcao == 1:
-            pass
+            nome = input('Digite o nome do contato: ')
+            sobrenome = input('Digite o sobrenome do contato: ')
+            telefone = input('Digite o telefone do contato: ')
+            email = input('Digite o email do contato: ')
+
+            adicionar_contato(nome, sobrenome, telefone, email, lista_contatos)
         
         elif opcao == 2:
             lista = listar_contatos(lista_contatos)
