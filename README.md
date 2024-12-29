@@ -18,3 +18,12 @@ O **Contact Manager** será um gerenciador simples de contatos desenvolvido em P
 - **Linguagem:** Python
 - **Controle de Versão:** Git
 - **Colaboração:** GitHub
+
+## 🧑‍💻 Equipe
+
+| Nome                 | Função no Projeto         |
+|--------------------|-----------------------------|
+| Lavique Dias       | Desenvolvedor & Colaborador |
+| Kevyn Lohan        | Desenvolvedor & Colaborador |
+| Isthanlley Fragoso | Desenvolvedor & Colaborador |
+
